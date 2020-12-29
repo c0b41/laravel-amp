@@ -1,0 +1,37 @@
+{
+    "name": "c0b41/laravel-amp",
+    "description": "Laravel AMP Optimize Service Provider",
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "c0b41",
+            "email": "cobaimelan@protonmail.ch"
+        }
+    ],
+     "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0",
+        "ampproject/amp-toolbox": "~0.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "c0b41\\Amp\\": "src"
+        },
+        "files": [
+            "src/includes/helpers.php"
+          ]
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "c0b41\\Amp\\AmpServiceProvider"
+            ],
+            "aliases": {
+                "Amp": "c0b41\\Amp\\Facades\\Amp"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
